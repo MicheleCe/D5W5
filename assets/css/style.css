@@ -1,0 +1,256 @@
+header {
+    background-color: rgb(255, 192, 23);
+    border-bottom: 2px solid black;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
+}
+
+svg {
+    transition: opacity 2s;
+}
+
+nav div{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.navButtons {
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+#logo {
+    width: 220px;
+}
+
+
+.underHead {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    background-color: rgb(255, 192, 23);
+    border-bottom: 2px solid black;
+}
+
+.blackButton {
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    height: 555px;
+}
+
+.svgContainer {
+    right: 0px;
+    top: 65px;
+    position: absolute;
+    width: 750px;
+    transition: 0.3s linear;
+}
+
+h1 {
+    font-family: Spectral;
+    font-size: 9rem;
+    letter-spacing: -10px;
+    padding: 20px 0px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    max-width: 50%;
+    padding-bottom: 55px;
+}
+
+.heading button{
+    font-size: 1.4rem;
+    padding: 12px 65px;
+}
+
+main {
+    font-family: Roboto;
+    position: relative;
+}
+.mainArt {
+    display: flex;
+    justify-content: center;
+}
+
+.mainArt > div {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.mainArt > div > p {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+.trending {
+    width: 100%;
+    height: 370px;
+}
+.trending > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.trendingList{
+    display: flex;
+    width: 460px;
+}
+
+.trendingList div > p {
+    margin: 15px 0px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.author img {
+    border-radius: 100px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.trendingList > p:first-child {
+    font-size: 3rem;
+    margin-right: 25px;
+    color: rgba(128, 128, 128, 0.367);
+}
+
+.trendingList div > p:nth-child(2) {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.trendingList div > p:last-child {
+    color: grey;
+}
+
+
+hr {
+    border-top: 2px solid rgba(128, 128, 128, 0.431);
+}
+
+.lastSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.lastSection div {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+
+}
+
+.articleSection {
+    flex-direction: column;
+}
+.articles {
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-bottom: 90px;
+}
+
+.articles div {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles div > p:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 10px 0px;
+}
+
+.articles div p:nth-child(3) {
+    color: grey;
+}
+
+.articles div p:nth-child(4) {
+    color: grey;
+    font-size: 0.9;
+    margin: 10px 0px;
+}
+
+.articles > img {
+    width: 280px;
+    margin: 0px 20px 0px 30px;
+}
+
+footer {
+    width: 800px;
+    margin-left: 70px;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+footer button {
+    white-space: nowrap;
+    color: grey;
+    font-size: 0.9rem;
+    background-color: white;
+    padding: 15px 35px;
+    margin: 5px;
+    border-radius: 3px;
+    border-color: rgba(128, 128, 128, 0.298);
+}
+
+.discoverButtons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.431);
+}
+
+footer div:nth-child(3){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer a {
+    color: grey;
+    margin: 15px ;
+}
