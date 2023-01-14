@@ -14,7 +14,7 @@ header {
     padding: 20px 40px;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     background-color: rgb(255, 192, 23);
     z-index: 2;
 }
@@ -38,9 +38,10 @@ nav{
     color: white;
     background-color: black;
     border-radius: 50px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 1.2rem;
     transition: all 0.3s linear;
+    border: none;
 }
 
 .heading {
@@ -50,14 +51,19 @@ nav{
     align-content: center;
     justify-content: center;
     border-bottom: 2px solid black;
-    padding: 40px;
-    min-height: 475px;
+    padding: 0px 40px;
+    min-height: 570px;
 }
 
 .heading div:first-child{
     justify-content: space-between;
     width: 100%;
     max-width: 1500px;
+}
+
+.heading button {
+    font-size: 1.5rem;
+    padding: 10px 60px;
 }
 
 .svgContainer {
@@ -75,7 +81,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     max-width: 50%;
     padding-bottom: 55px;
 }
@@ -137,9 +143,10 @@ code {
 }
 
 .trendingList > p:first-child {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-right: 25px;
-    color: rgba(128, 128, 128, 0.367);
+    color: rgba(128, 128, 128, 0.204);
+    font-weight: 800;
 }
 
 .trendingList div > p:nth-child(2) {
@@ -149,6 +156,7 @@ code {
 
 .trendingList div > p:last-child {
     color: grey;
+    font-size: 1rem;
 }
 
 .lastSection {
@@ -178,7 +186,7 @@ code {
 }
 
 .articles div > p:nth-child(2) {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 800;
     margin: 10px 0px;
 }
@@ -194,7 +202,7 @@ code {
 }
 
 .articles > img {
-    width: 280px;
+    width: 250px;
     margin: 0px 20px 0px 30px;
 }
 
@@ -214,7 +222,7 @@ footer button {
     color: grey;
     font-size: 0.9rem;
     background-color: white;
-    padding: 15px 35px;
+    padding: 10px 35px;
     margin: 5px;
     border-radius: 3px;
     border-color: rgba(128, 128, 128, 0.298);
@@ -328,5 +336,11 @@ footer a {
     }
     html {
         font-size: 13px;
+    }
+    .heading{
+        padding: 0;
+    }
+    .trending {
+        padding: 0;
     }
 }
