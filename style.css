@@ -85,7 +85,7 @@ code {
     background-color: rgb(237, 234, 234);
     border-radius: 50px;
     padding: 8px;
-  }
+}
 
 .trending {
     display: flex;
@@ -282,6 +282,12 @@ footer a {
     }
 
     .articles {
-        margin-bottom: 85%;
+        margin-bottom: 50%;
+    }
+
+    code {
+        background-color: none;
+        border-radius: 0;
+        padding: 0;
     }
 }
