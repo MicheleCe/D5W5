@@ -1,6 +1,7 @@
 body {
     font-size: 1.2rem;
     font-family: Roboto;
+    width: 100%;
 }
 
 #logo {
@@ -292,6 +293,11 @@ footer a {
     footer {
         width: 100%;
     }
+    svg {
+        display: none;
+    }
+
+    
 }
 
 @media screen and (max-width: 750px){
@@ -319,5 +325,8 @@ footer a {
 
     .lastSection {
         padding: 0;
+    }
+    html {
+        font-size: 13px;
     }
 }
