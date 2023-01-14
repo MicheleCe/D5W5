@@ -1,26 +1,25 @@
-header {
-    background-color: rgb(255, 192, 23);
-    border-bottom: 2px solid black;
-    font-family: Roboto;
+body {
     font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    transition: 0.3s linear;
+    font-family: Roboto;
 }
 
-nav {
+#logo {
+    width: 220px;
+}
+
+header {
     display: flex;
     justify-content: center;
     padding: 20px 40px;
     position: sticky;
     top: 0;
-
+    border-bottom: 1px solid black;
+    background-color: rgb(255, 192, 23);
+    z-index: 2;
 }
 
-nav div{
+nav{
     display: flex;
-    align-items:center;
     justify-content: space-between;
     width: 100%;
     max-width: 1500px;
@@ -29,22 +28,9 @@ nav div{
 .navButtons {
     width: 550px;
     display: flex;
+    align-items:center;
     justify-content: space-around;
     white-space: nowrap;
-}
-
-#logo {
-    width: 220px;
-}
-
-
-.underHead {
-    display: flex;
-    justify-content: center;
-    font-family: Roboto;
-    background-color: rgb(255, 192, 23);
-    border-bottom: 2px solid black;
-    padding: 40px;
 }
 
 .blackButton {
@@ -57,12 +43,20 @@ nav div{
 }
 
 .heading {
+    background-color: rgb(255, 192, 23);
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    align-content: center;
     justify-content: center;
+    border-bottom: 2px solid black;
+    padding: 40px;
+    min-height: 475px;
+}
+
+.heading div:first-child{
+    justify-content: space-between;
     width: 100%;
     max-width: 1500px;
-    height: 555px;
 }
 
 .svgContainer {
@@ -70,7 +64,6 @@ nav div{
     top: 65px;
     position: absolute;
     width: 750px;
-    transition: 0.3s linear;
 }
 
 h1 {
@@ -86,58 +79,41 @@ h2 {
     padding-bottom: 55px;
 }
 
-.heading button{
-    font-size: 1.4rem;
-    padding: 12px 65px;
-}
-
-main {
-    font-family: Roboto;
-    position: relative;
-
-}
-
-.mainArt {
+.trending {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     padding: 40px;
 }
 
-.mainArt > div {
-    width: 100%;
-    max-width: 1500px;
-}
-
-.mainArt > div > p {
+.trending > p {
     text-transform: uppercase;
-    font-weight: 800;
+    max-width: 1500px;
+    width: 100%;
+    align-self: flex-start;
     margin: 20px 0px;
 }
 
-.trending {
-    width: 100%;
-    height: 370px;
-}
 .trending > div {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1500px;
     justify-content: space-between;
 }
 
 .trendingList{
     display: flex;
     width: 460px;
+    margin: 10px 0px;
 }
-
-.trendingList div > p {
+.trendingList div p {
     margin: 15px 0px;
 }
-
 .author {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin: 0;
+    font-size: 1rem;
 }
 
 .author img {
@@ -145,11 +121,6 @@ main {
     width: 30px;
     margin-right: 10px;
 }
-
-.trendingList div p {
-    margin: 15px 0px;
-}
-
 
 .trendingList > p:first-child {
     font-size: 3rem;
@@ -166,11 +137,6 @@ main {
     color: grey;
 }
 
-
-hr {
-    border-top: 2px solid rgba(128, 128, 128, 0.431);
-}
-
 .lastSection {
     display: flex;
     justify-content: center;
@@ -180,15 +146,15 @@ hr {
 
 .lastSection > div {
     display: flex;
-    width: 100%;
     max-width: 1500px;
-
 }
 
 .articles {
     flex-direction: row;
     font-size: 1.2rem;
     margin-bottom: 90px;
+    display: flex;
+    max-height: 180px;
 }
 
 .articles div {
@@ -268,5 +234,41 @@ footer a {
 
     hr {
         margin-top: 60px;
+    }
+
+    .svgContainer {
+        left: 680px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .navButtons a:first-child, .navButtons a:nth-child(2), .navButtons a:nth-child(3) {
+        display: none;
+    }
+    .navButtons {
+        justify-content: end;
+    }
+
+    .navButtons a{
+        margin-right: 25px;
+    }
+
+    .lastSection{
+        margin-top: 0;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .navButtons a{
+        display: none;
+    }
+
+    .articles {
+        margin-bottom: 85%;
     }
 }
