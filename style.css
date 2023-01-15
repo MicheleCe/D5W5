@@ -107,6 +107,7 @@ code {
     width: 100%;
     align-self: flex-start;
     margin: 20px 0px;
+    font-weight: 800;
 }
 
 .trending > div {
