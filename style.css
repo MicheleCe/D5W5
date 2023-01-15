@@ -272,7 +272,9 @@ footer a {
     footer {
         margin: 0px 0px 40px 0px;
     }
-
+    .lastSection{
+        margin-top: 0;
+    }
     hr {
         margin-top: 60px;
     }
@@ -292,10 +294,6 @@ footer a {
 
     .navButtons a{
         margin-right: 25px;
-    }
-
-    .lastSection{
-        margin-top: 0;
     }
 
     footer {
