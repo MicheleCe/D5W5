@@ -5266,7 +5266,7 @@
             </div>
         </div>
         <div class="trending">
-            <p>trending on medium</p>
+            <p><img src="./assets/imgs/svg/trending.svg"/> Trending on medium</p>
             <div>
                 <div class="trendingList">
                     <p>01</p>
@@ -5326,7 +5326,7 @@
                             <span class="author"><img src="./assets/imgs/image07.jpeg"><p>Robert Roy Britt</p></span>
                             <p>How Old is Old?</p>
                             <p>What we consider “old” changes dramatically with age, and our perspectives can be predictive of how well we age</p>
-                            <p>Oct 27 · 5 min read · <code>Aging</code></p>
+                            <p>Oct 27 · 5 min read · <code>Aging</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image08.jpeg">
                     </div>
@@ -5335,7 +5335,7 @@
                             <span class="author"><img src="./assets/imgs/image09.jpeg"><p>Taru Anniina Liikanen</p></span>
                             <p>Is Taylor Swift Allowed to Speak About Fat?</p>
                             <p>Can you speak about your trauma if you don't look traumatized?</p>
-                            <p>Oct 24 · 6 min read · <code>Health</code></p>
+                            <p>Oct 24 · 6 min read · <code>Health</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image10.jpeg">
                     </div>
@@ -5344,7 +5344,7 @@
                             <span class="author"><img src="./assets/imgs/image11.jpeg"><p>David Rodenas, Ph. D.</p></span>
                             <p>Don’t Screw Up, You Will Be Found Guilty</p>
                             <p>Software Engineer, yours is the right to produce high-quality work at all times, also the liability.</p>
-                            <p>Oct 15 · 5 min read · <code>Software Engineering</code></p>
+                            <p>Oct 15 · 5 min read · <code>Software Engineering</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image12.png">
                     </div>
@@ -5353,7 +5353,7 @@
                             <span class="author"><img src="./assets/imgs/image13.png"><p>Microsoft Design</p></span>
                             <p>Leave No Trace</p>
                             <p>How product designers can break from the status quo and help our planet</p>
-                            <p>Oct 25 · 11 min read · <code>Sustainability</code></p>
+                            <p>Oct 25 · 11 min read · <code>Sustainability</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image14.png">
                     </div>
@@ -5362,7 +5362,7 @@
                             <span class="author"><img src="./assets/imgs/image15.jpeg"><p>Scott H. Young</p></span>
                             <p>Variability, Not Repetition, is the Key to Mastery</p>
                             <p>Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the man who has practiced one kick 10,000...</p>
-                            <p>Oct 26 · 7 min read · <code>Health</code></p>
+                            <p>Oct 26 · 7 min read · <code>Health</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image16.jpg">
                     </div>
@@ -5371,7 +5371,7 @@
                             <span class="author"><img src="./assets/imgs/image17.png"><p>Paul A. DeStefanoin Human Parts</p></span>
                             <p>What I Overheard as an Escape Room Actor</p>
                             <p>Lock a group of people in a room and you’ll witness some surprising confessions</p>
-                            <p>Jan 18, 2020 · 6 min read · <code>Experiences</code></p>
+                            <p>Jan 18, 2020 · 6 min read · <code>Experiences</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image18.jpeg">
                     </div>
@@ -5380,7 +5380,7 @@
                             <span class="author"><img src="./assets/imgs/image19.jpeg"><p>Kim Scott</p></span>
                             <p>6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”</p>
                             <p>With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…</p>
-                            <p>Oct 24 · 6 min read · <code>Health</code></p>
+                            <p>Oct 24 · 6 min read · <code>Health</code><img src="./assets/imgs/svg/star.svg"/><img src="./assets/imgs/svg/bookmark.svg"></p>
                         </div>
                         <img src="./assets/imgs/image20.jpg">
                     </div>
@@ -5418,21 +5418,24 @@
     let head = document.querySelector('header')
     let button = document.querySelector('.blackButton')
 
-    window.onscroll = function(){
+    window.onscroll = scrollChange
+    function scrollChange (){
         if (window.pageYOffset > 560) {
             head.style.backgroundColor = 'white'; button.style.backgroundColor = 'green';}
         else {head.style.backgroundColor = "";button.style.backgroundColor = "";}
     };
 
-    let m = document.querySelectorAll('g')
-    m.forEach(element => element.style.transition = 'opacity 0.5s');
+    let m = document.querySelectorAll('g[stroke-linecap="butt"]')
+    m.forEach(element => element.style.transition = '0.5s linear');
     var intervalId = window.setInterval(function(){
-            var randNum =  Math.floor(Math.random() * m.length) + 3;
-            m[randNum].style.opacity= '0';
-    }, 50);
+            var randNum =  (Math.floor(Math.random() * m.length) +3) *2;
+            if (m[randNum] !== undefined){
+            m[randNum].style.opacity = '0';}
+    }, 10);
     var intervalId = window.setInterval(function(){
-            var randNum =  Math.floor(Math.random() * m.length) + 1;
-            m[randNum].style.opacity= '1';
-    }, 40);
+            var randNum =  (Math.floor(Math.random() * m.length) +3) *2;
+            if (m[randNum] !== undefined){
+            m[randNum].style.opacity = '1';}
+    }, 10);
 </script>
 </html>
