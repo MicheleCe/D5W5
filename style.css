@@ -97,18 +97,19 @@ code {
 
 .trending {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 40px;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px; 
+    max-width: 1500px; 
+    margin: auto;
 }
 
 .trending > p {
+    
     display: flex;
+    align-self: flex-start;
     align-items: center;
     text-transform: uppercase;
-    max-width: 1500px;
-    width: 100%;
-    align-self: flex-start;
     margin: 20px 0px;
     font-weight: 800;
 }
